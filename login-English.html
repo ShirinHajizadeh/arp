@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arya Rayaneh Parsian</title>
+<link href="photo/favicon.ico" rel="shortcut icon" type="image/x-icon" />	
+<link href="login-English.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+var i=0;
+function picchangetitle(){
+	var arr=new Array("photo/title-2.jpg","photo/title-3.jpg","photo/title-4.jpg","photo/title-5.jpg","photo/title-6.jpg");
+    var pic=document.getElementsByName("img-title").item(0);
+	pic.src=arr[i];
+	i++;
+	if(i>arr.length-1){i=0;}
+}
+	 setInterval("picchangetitle()",1800);
+	
+	function picchangeleft2(){
+	var arr=new Array("photo/product-2.png","photo/product-3.png","photo/product-4.png","photo/product-5.png","photo/product-6.png");
+    var pic=document.getElementsByName("img-left2").item(0);
+	pic.src=arr[i];
+	i++;
+	if(i>arr.length-1){i=0;}
+}
+	 setInterval("picchangeleft2()",1800);
+	
+	function date(){
+    var d = new Date();
+    document.getElementById("menutime").innerHTML = d;
+	setInterval("date()",1000);
+}
+	  function test() {
+        document.getElementById('button2').onclick='account-form-English.html';
+    }
+</script>
+</head>
+
+<body onLoad="date()">
+	<!main class>
+	<div id="main">
+		
+	<!title class>	
+		<div id="title">
+		<div id="img-title"></div>	
+		<div id="social">
+		<button id="button2-title" onClick="location.href='home-page-Persian.html'">Persian</button>	
+			<br>
+			<div id="socialicon1">
+				 <a href="#" target="_blank" id="a-socialicon1">@AryaRayaneh</a>
+			 </div><br>
+			 <div id="socialicon2">
+			     <a href="#" target="_blank" id="a-socialicon2">@ARP_Company</a>
+			 </div><br>
+			 <div id="socialicon3">
+			     <a href="#" target="_blank" id="a-socialicon3"></a>
+			 </div>
+		</div>
+		</div>
+		
+		
+		<!menu class>
+		<div id="menu">
+		<div id="menutime" class="blinkingtext"></div>	
+		<div id="menubar">	
+		<ul>
+		<li><a href="home-page-English.html">Home</a></li>
+		<li class="dropdown">
+			<a href="#">Products</a> 
+			<div class="dropdown-content">
+				<a href="product-Cisco-English.html"><img src="photo/pro-cisco.png" alt="Cisco" class="img-top"></a>
+				<a href="#"><img src="photo/pro-Nexans.png" alt="Nexans" class="img-top"></a>
+				<a href="product-HPE-English.html"><img src="photo/pro-HPE.png" alt="HPE" class="img-top"></a>
+				<a href="#"><img src="photo/pro-Extreme.png" alt="Extreme" class="img-top"></a>
+		        <a href="product-Juniper-English.html"><img src="photo/pro-Juniper.png" alt="Juniper" class="img-top"></a>
+		        <a href="#"><img src="photo/pro_fortinet.png" alt="Fortinet" class="img-top"></a>
+			</div> 
+		</li>
+		<li class="dropdown">
+			<a href="about us-English.html">About us</a> 
+		</li>
+		<li><a href="contact us-English.html" target="_self">Contact us</a></li>
+		</ul>
+		</div>	
+		</div>
+		
+		<!header class>
+		<div id="header">
+		  	<img src="photo/title-1.jpg" alt="Cisco" name="img-title" >
+		</div>
+		
+		<!top class>
+		<div id="top">
+			<div id="top1">
+	     	<div id="top2">
+			   <lable>User name</lable><br>
+	           <input type="text" size="20"  maxlength="10" placeholder="National id"><br><br>
+	           <lable>Password</lable><br>
+	           <input type="password" size="20"  maxlength="12" ><br><br>
+	           <input type="submit" value="Log in" id="button1">&nbsp;&nbsp;
+				  <input type="submit" value="Sign in" id="button2" onClick="location.href='account-form-English.html'">
+			  <br><br><br>
+				<ul>
+				<li id="li1"><a class="a-top1" onClick="alert('Enter your username and password to trace the status of your order, and be member of our newsletter. If you have not yet created an account, use the registration link.')">
+					More Information</a></li>
+				</ul>
+				</div></div>
+		</div>
+		
+		<!footer class>
+		<div id="footer">
+			<img src="photo/logo-footer.png" alt="آریا رایانه پارسیان">
+			<p>Copyright © ARP Co. All Rights Reserved.</p></div>
+		</div>
+</body>
+</html>
+

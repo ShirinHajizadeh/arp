@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arya Rayaneh Parsian</title>
+<link href="photo/favicon.ico" rel="shortcut icon" type="image/x-icon" />	
+<link href="installation-English.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+var i=0;
+function picchangetitle(){
+	var arr=new Array("photo/title-2.jpg","photo/title-3.jpg","photo/title-4.jpg","photo/title-5.jpg","photo/title-6.jpg");
+    var pic=document.getElementsByName("img-title").item(0);
+	pic.src=arr[i];
+	i++;
+	if(i>arr.length-1){i=0;}
+}
+	 setInterval("picchangetitle()",1800);
+	
+	function picchangeleft2(){
+	var arr=new Array("photo/product-2.png","photo/product-3.png","photo/product-4.png","photo/product-5.png","photo/product-6.png");
+    var pic=document.getElementsByName("img-left2").item(0);
+	pic.src=arr[i];
+	i++;
+	if(i>arr.length-1){i=0;}
+}
+	 setInterval("picchangeleft2()",1800);
+
+	function date(){
+    var d = new Date();
+    document.getElementById("menutime").innerHTML = d;
+	setInterval("date()",1000);	
+}
+</script>
+</head>
+
+<body onLoad="date()">
+	<!main class>
+	<div id="main">
+		
+	<!title class>	
+		<div id="title">
+		<div id="img-title"></div>	
+		<button id="button1-title" onClick="location.href='login-English.html'">Register/Login</button>
+		<button id="button2-title" onClick="location.href='home-page-Persian.html'">Persian</button>	
+		</div>
+		
+	<!menu class>
+		<div id="menu">
+		<div id="menutime" class="blinkingtext"></div>	
+		<div id="menubar">	
+		<ul>
+		<li><a href="home-page-English.html">Home</a></li>
+		<li class="dropdown">
+			<a href="#">Products</a> 
+			<div class="dropdown-content">
+				<a href="product-Cisco-English.html"><img src="photo/pro-cisco.png" alt="Cisco" class="img-top"></a>
+				<a href="#"><img src="photo/pro-Nexans.png" alt="Nexans" class="img-top"></a>
+				<a href="product-HPE-English.html"><img src="photo/pro-HPE.png" alt="HPE" class="img-top"></a>
+				<a href="#"><img src="photo/pro-Extreme.png" alt="Extreme" class="img-top"></a>
+		        <a href="product-Juniper-English.html"><img src="photo/pro-Juniper.png" alt="Juniper" class="img-top"></a>
+		        <a href="#"><img src="photo/pro_fortinet.png" alt="Fortinet" class="img-top"></a>
+			</div> 
+		</li>
+		<li class="dropdown">
+			<a href="about us-English.html">About us</a> 
+		</li>
+		<li><a href="contact us-English.html" target="_self">Contact us</a></li>
+		</ul>
+		</div>	
+		</div>
+		
+		<!header class>
+		<div id="header">
+		  	<img src="photo/title-1.jpg" alt="Cisco" name="img-title">
+		</div>
+		
+		<!right class>
+		<div id="right">
+			<h2>Develop and Installation</h2>
+			<p>Today, due to increased sensitivity in the customers and employer’s information transfer, they are looking for better after-sales services (including consulting, installation, training, troubleshooting and support) after the purchase of computer equipment (hardware and software). Accordingly, Arya Rayaneh Parsian has always tried to use Cisco, Juniper, Extreme Networks, HP / 3COM and Nexans in the field of LAN and WAN computer network and the use of hardware tools by trained and experts engineers. And technology-based updated software to meet the need for a comprehensive customer. Brief summary of the services is mentioned as below.</p><br>
+			<h3>Installation</h3>
+			<p>Experts and the technical staff in the technical department, utilizing the latest standards for the installation of computer networks, they are able to carry out all stages of the network projects based on copper or fiber optic network (Trunk installation, Cabling, Fiber Optic Fusion, Rack installation and etc.). Furthermore, configure all network equipment such as switches, routers, wireless and security equipment.</p><br>
+			<h3>Troubleshooting and Maintenance</h3>
+			<p>Another activity of the technical department is the dispatch of a specialist expert to the site of the customer to test, investigate and troubleshoot disruptive networks. This is done by using various hardware and software tools for testing and monitoring.</p>
+		 
+		</div>
+		
+		<!left class>
+		<div id="left">
+		   <div id="left1">
+			   <p class="plink">Related Links:</p>
+	            <a href="https://www.cisco.com/" target="_blank" class="a-left1">www.cisco.com</a>
+		         <a href="https://www.nexans.com/" target="_blank" class="a-left1">www.nexans.com</a>
+		         <a href="https://www.hpe.com/" target="_blank" class="a-left1">www.hpe.com</a>
+		         <a href="https://www.extremenetworks.com/" target="_blank" class="a-left1">www.extremenetworks.com</a>
+			     <a href="https://www.juniper.net" target="_blank" class="a-left1">www.juniper.net</a>
+			     <a href="https://www.fortinet.com/" target="_blank" class="a-left1">www.fortinet.com</a>
+			</div>
+		   <div id="left2">
+			   <p class="plink">Products:</p>
+	             <div id="left2-2">
+				<img src="photo/product-1.png" alt="Cisco" name="img-left2" class="img-left2-2">	 
+	           </div>
+			</div>
+		   <div id="left3">
+			   <p class="plink">Sign in:</p><br>
+			   <div id="left3-3">
+			   <lable>User name</lable><br>
+	           <input type="text" size="20"  maxlength="10" placeholder="National id"><br>
+	           <lable>Password</lable><br>
+	           <input type="password" size="20"  maxlength="12" ><br>
+	           <input type="submit" value="Login" id="button-left3">
+			  </div>   
+			 </div>
+		</div>
+		
+		<!footer class>
+		<div id="footer">
+			<img src="photo/logo-footer.png" alt="آریا رایانه پارسیان">
+			<p>Copyright © ARP Co. All Rights Reserved.</p></div>
+		
+	</div>
+</body>
+</html>

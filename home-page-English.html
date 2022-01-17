@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+<title>Arya Rayaneh Parsian</title>
+<link href="photo/favicon.ico" rel="shortcut icon" type="image/x-icon" />	
+<link href="home-page-English.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");}
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+	
+	function date(){
+    var d = new Date();
+    document.getElementById("menutime").innerHTML = d;
+	setInterval("date()",1000);	
+}
+	
+	</script>
+</head>
+
+<body onLoad="date(),showSlides()">
+	<!main class>
+	<div id="main">
+		
+	<!title class>	
+		<div id="title">
+		<div id="img-title"></div>	
+		<button id="button1-title" onClick="location.href='login-English.html'">Register/Login</button>
+		<button id="button2-title" onClick="location.href='home-page-Persian.html'">Persian</button>	
+		</div>
+		
+		<!menu class>
+		<div id="menu">
+		<div id="menutime" class="blinkingtext"></div>	
+		<div id="menubar">	
+		<ul>
+		<li><a href="home-page-English.html">Home</a></li>
+		<li class="dropdown">
+			<a href="#">Products</a> 
+			<div class="dropdown-content">
+				<a href="product-Cisco-English.html"><img src="photo/pro-cisco.png" alt="Cisco" class="img-top"></a>
+				<a href="#"><img src="photo/pro-Nexans.png" alt="Nexans" class="img-top"></a>
+				<a href="product-HPE-English.html"><img src="photo/pro-HPE.png" alt="HPE" class="img-top"></a>
+				<a href="#"><img src="photo/pro-Extreme.png" alt="Extreme" class="img-top"></a>
+		        <a href="product-Juniper-English.html"><img src="photo/pro-Juniper.png" alt="Juniper" class="img-top"></a>
+		        <a href="#"><img src="photo/pro_fortinet.png" alt="Fortinet" class="img-top"></a>
+			</div> 
+		</li>
+		<li class="dropdown">
+			<a href="about us-English.html">About us</a> 
+		</li>
+		<li><a href="contact us-English.html" target="_self">Contact us</a></li>
+		</ul>
+		</div>	
+		</div>
+		
+		
+		<!header class>
+		<div id="header">
+        <div class="mySlides fade">
+         <img src="photo/title-1.jpg" alt="Cisco">
+        </div>
+        <div class="mySlides fade">
+  <img src="photo/title-2.jpg" alt="Nexans">
+</div>
+<div class="mySlides fade">
+   <img src="photo/title-3.jpg" alt="HP">
+ </div>
+<div class="mySlides fade">
+   <img src="photo/title-4.jpg" alt="Extreme">
+ </div>
+<div class="mySlides fade">
+   <img src="photo/title-5.jpg" alt="juniper">
+ </div>
+<div class="mySlides fade">
+   <img src="photo/title-6.jpg" alt="Fortinet">
+ </div>	
+<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+</div>
+		
+		<!top class>
+		<div id="top">
+			 <img src="photo/ARP-en.png" alt="آریا رایانه پارسیان">
+			<div id="top1">
+			  <div id="top1-1"><a href="product-English.html"><img src="photo/Products.png" alt="product" class="img-top"></a></div>
+	          <div id="top1-2"><a href="Consulting-English.html"><img src="photo/Advice.png" alt="Advice" class="img-top"></a></div> 
+			  <div id="top1-3"><a href="installation-English.html"><img src="photo/installation.png" alt="installation" class="img-top"></a></div> 
+			  <div id="top1-4"><a href="warranty-English.html"><img src="photo/warranty.png" alt="warranty" class="img-top"></a></div>
+			</div>	
+			<br>
+			<img src="photo/product-En.png" alt="ARP" >
+		    <div id="top2">
+			  <div id="top2-1">
+				  <a href="product-Cisco-English.html"> <img src="photo/product-1.png" alt="Cisco" class="img-top"></a> 
+	          </div>  
+			  <div id="top2-2">
+				   <a href="#"> <img src="photo/product-2.png" alt="Nexans" class="img-top" ></a> 
+	           </div> 
+			  <div id="top2-3">
+				    <a href="#"><img src="photo/product-3.png" alt="HPE" class="img-top" ></a> 
+	          </div> 
+			  <div id="top2-4">
+				    <a href="#"><img src="photo/product-4.png" alt="Extreme" class="img-top" ></a> 
+	          </div> 
+			  <div id="top2-5">
+				   <a href="product-Juniper-English.html"> <img src="photo/product-5.png" alt="Juniper" class="img-top" ></a> 
+	          </div> 
+			  <div id="top2-6">
+				    <a href="#"><img src="photo/product-6.png" alt="Fortinet" class="img-top" > </a>
+	          </div> 
+			</div>
+	  </div>
+		
+		<!bottom class>	
+		   <div id="bottom">
+			 <div id="bottom-left">
+				<h3 >Sign in</h3><br>
+			   <div id="bottom-left1">	  
+			   <lable>User Name</lable><br>
+	           <input type="text" size="20"  maxlength="10" placeholder="National id"><br>
+	           <lable>Password</lable><br>
+	           <input type="password" size="20"  maxlength="12" >
+			   <br>
+	           <input type="submit" value="Sign in" id="button-bottom">
+			  </div>
+			   </div> 
+			  <div id="bottom-right">
+				  <h3 >Contact us</h3><br> 
+				<ul>
+				  <li id="li1">Fath Alley,1st Golestan-Sahel Ghoo St.Bandaranzali Gilan</li><br><br>
+				  <li id="li2">013-44437601</li><br><br>
+				  <li id="li3">info@aryarayaneh.ir</li>
+				</ul>   
+			  </div>
+			</div>  
+		
+		<!footer class>
+		<div id="footer">
+			<img src="photo/logo-footer.png" alt="آریا رایانه پارسیان">
+			<p>Copyright © ARP Co. All Rights Reserved.</p></div>
+		</div>
+</body>
+</html>

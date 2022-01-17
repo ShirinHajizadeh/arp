@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+*{padding: 0px;margin: 0px}
+@font-face{font-family:yekan;src:url('font/persian font/Yekan.eot') format('embedded-opentype'),url('font/persian font/Yekan.ttf') format('truetype'),url('font/persian font/Yekan.woff') format('woff')}
+body{background-image:url(photo/bg.jpg);background-position:center;text-align: center;}
+
+/*top class*/
+#top{width:900px;height:350px;margin:120px 200px 0px 200px}
+
+/*bottom class*/
+#bottom{width:900px;height:100px;margin: 20px 200px 0px 200px}
+.button{width: 90px;height: 45px; font-size: 20px;background-color:#000000;border-radius: 10px 10px 10px 10px;box-shadow:0px 0px 0px 0px gray;color:#FDFDFD}
+
+

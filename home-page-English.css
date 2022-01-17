@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+*{padding: 0px;margin: 0px}
+@font-face{font-family:yekan;src:url('font/persian font/Yekan.eot') format('embedded-opentype'),url('font/persian font/Yekan.ttf') format('truetype'),url('font/persian font/Yekan.woff') format('woff')}
+
+/*main class*/
+#main{width:970px;height:1450px;background-image:url(photo/bg.jpg);background-repeat:no_repeat;color:#ffffff;margin:auto;font-family:yekan;}
+
+/*title class*/
+#title{width: 970px;height: 215px;margin: 5px 0px 0px 0px}
+#img-title{width: 500px;height: 200px;background-image:url(photo/logo-title-English.png);background-repeat:no-repeat;float:right}
+#button1-title {width: 100px;height:35px; font-size:14px;background:#000000;color:#FFFFFF;border-radius: 10px 10px 10px 10px;margin:20px 0px 5px 10px;}
+#button2-title {width: 90px;height: 35px; font-size:14px;background:#000000;color:#FFFFFF;border-radius: 10px 10px 10px 10px;margin:0px 0px 5px 10px;}
+
+/*menu class*/
+#menu{width:970px;height:50px;background:#000000;margin:0px 0px 0px 0px;}
+#menubar{width:500px;height:50px;float: left;direction:ltr;text-align:left}
+ul{list-style-type: none;overflow:hidden;direction:ltr;color:#FFFFFF;padding:10px 20px 5px 30px;}
+li{float:left;direction:ltr;padding:0px 10px 0px 10px;font-size: 16px;}
+li a{display:inline-block;color:#FFFFFF;text-decoration: none; padding:5px 5px 5px 5px;font-size:16px;}
+li :hover{background:#232323;border-radius: 30px 30px 30px 30px}
+.dropdown-content{display:none;position: absolute;background: repeating-linear-gradient(#272727,#474747,#232323);background: -o-radial-gradient(#272727,#474747,#232323);background:-moz- repeating-linear-gradient(#272727,#474747,#232323);background:-webkit- repeating-linear-gradient(#272727,#474747,#232323);border-radius: 10px 10px 10px 10px;height: 75px; width: 790px;z-index: 2;padding: 10px 0px 8px 5px;transition: width 2s;-moz-transition: width 2s;-webkit-transition: width 2s;}
+.dropdown-content a{text-decoration: none;display: inline;text-align: left;color:#FFFFFF;padding: 10px 4px 8px 4px}
+.dropdown:hover .dropdown-content{display: block}
+#menutime{width:150px;height:50px;float: right;padding-right: 20px;text-align: center}
+.blinkingtext{animation: blinkingtext 2.5s infinite}
+@keyframes blinkingtext{0%{color:#ffffff} 10%{color:transparent}}
+
+/*header class*/
+#header{width:970px;height:250px;background:#ffffff; margin: 0px 0px 0px 0px;}
+/* The dots/bullets/indicators */
+.dot {height: 13px;width: 13px;margin: 0 2px;background-color: #232323;border-radius: 10%;display: inline-block;transition: background-color 0.6s ease;}
+.active {background-color: #ffffff;}
+/* Fading animation */
+.fade {-webkit-animation-name: fade;-webkit-animation-duration: 2.0s;animation-name: fade;}
+@-webkit-keyframes fade {from {opacity: .4} to {opacity: 1}}
+@keyframes fade {from {opacity: .4} to {opacity: 1}}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {.text {font-size: 11px}}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+
+/*top class*/
+#top{width: 970px;height:650px;background: #000000;margin:0px 0px 0px 0px;padding:60px 0px 5px 0px;text-align: center;}
+#top1{width: 970px;height:160px;margin:auto;padding:5px 185px 5px 185px}
+#top1-1{width: 140px;height:140px;background-image:url(photo/mahsulat.png);background-repeat:no-repeat;float:left;margin:10px 5px 10px 5px;border-radius:10%;}
+#top1-2{width: 140px;height:140px;background-image:url(photo/moshavere.png);background-repeat: no-repeat;float:left;margin:10px 5px 10px 5px;border-radius:10%}
+#top1-3{width: 140px;height:140px;background-image:url(photo/nasb.png);background-repeat: no-repeat;float:left;margin:10px 5px 10px 5px;border-radius:10%}
+#top1-4{width: 140px;height:140px;background-image:url(photo/khadamat.png);background-repeat: no-repeat;float:left;margin:10px 5px 10px 5px;border-radius:10%}
+
+
+#top2{width: 970px;height:140px;margin:auto;margin:5px 5px 10px 5px}
+#top2-1{width: 150px;height:135px;float:left;margin:5px 5px 10px 5px}
+#top2-2{width: 150px;height:135px;float:left;margin:5px 5px 10px 5px}
+#top2-3{width: 150px;height:135px;float:left;margin:5px 5px 10px 5px}
+#top2-4{width: 150px;height:135px;float:left;margin:5px 5px 10px 5px}
+#top2-5{width: 150px;height:135px;;float:left;margin:5px 5px 10px 5px}
+#top2-6{width: 150px;height:135px;float:left;margin:5px 5px 10px 5px}
+.img-top{border-radius:10px 10px 10px 10px}
+
+/*bottom class*/
+#bottom{width: 970px;height:250px;background-image:url(photo/bg.jpg);background-repeat: repeat;}
+#bottom-left{width: 250px;height: 200px;float:left;margin: 0px 20px 0px 50px;}
+#bottom-left1{width: 250px;height: 200px;text-align: center;}
+#button-bottom{width: 70px;height: 30px; font-size:14px;color:#FFFFFF;background:#000000;border-radius: 10px 10px 10px 10px;margin-top:10px;}
+input{border-radius: 8px 8px 8px 8px;} 
+lable{font-size:14px;color:#FFFFFF;}
+#bottom-right{width: 600px;height: 200px;float:left;margin: 0px 20px 0px 20px;}
+#li1{font-size:18px;background:url(photo/apartment-icon.png)no-repeat left center;padding: 0px 0px 0px 40px} 
+#li2{font-size:18px;background:url(photo/Telephone-icon.png)no-repeat left center ;padding: 0px 0px 0px 40px}
+#li3{font-size:18px;background:url(photo/Mail-icon.png)no-repeat left center;padding: 0px 0px 0px 40px}
+
+
+/*footer class*/
+#footer{width:970px;height:90px;background-image:url(photo/bg.jpg);background-repeat: repeat;padding:20px 0px 10px 0px;text-align:center;clear: both;position:relative;color:#FFFFFF;font-size:16px;}
+
+
+
+
+
+
+
+

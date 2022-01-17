@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+<title>آریا رایانه پارسیان</title>
+<link href="photo/favicon.ico" rel="shortcut icon" type="image/x-icon" />	
+<link href="home-page-Persian.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");}
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+	
+	
+	function date() {
+	week= new Array("يكشنبه","دوشنبه","سه شنبه","چهارشنبه","پنج شنبه","جمعه","شنبه")
+    months = new Array("فروردين","ارديبهشت","خرداد","تير","مرداد","شهريور","مهر","آبان","آذر","دی","بهمن","اسفند");
+    a = new Date();
+    d= a.getDay();
+    day= a.getDate();
+    month = a.getMonth()+1;
+    year= a.getYear()-100;
+     time=a.toLocaleTimeString();
+	year = (year== 0)?2000:year;
+	(year<1000)? (year += 2000):true;
+    year -= ( (month < 3) || ((month == 3) && (day < 21)) )? 622:621;
+	switch (month) {
+    	case 1: (day<21)? (month=10, day+=10):(month=11, day-=20); break;
+    	case 2: (day<20)? (month=11, day+=11):(month=12, day-=19); break;
+    	case 3: (day<21)? (month=12, day+=9):(month=1, day-=20);   break;
+    	case 4: (day<21)? (month=1, day+=11):(month=2, day-=20);   break;
+    	case 5:
+    	case 6: (day<22)? (month-=3, day+=10):(month-=2, day-=21); break;
+    	case 7:
+    	case 8:
+    	case 9: (day<23)? (month-=3, day+=9):(month-=2, day-=22);  break;
+    	case 10:(day<23)? (month=7, day+=8):(month=8, day-=22);    break;
+    	case 11:
+    	case 12:(day<22)? (month-=3, day+=9):(month-=2, day-=21);  break;
+       default:  	break;
+	}
+ document.getElementById("menutime").innerHTML=week[d]+" "+day+" "+months[month-1]+" "+ year+" "+time;
+ setInterval("date()",1000);	
+}
+	</script>
+</head>
+
+<body onLoad="date(),showSlides()">
+	<!main class>
+	<div id="main">
+		
+	<!title class>	
+		<div id="title">
+		<div id="img-title"></div>	
+		<button id="button1-title" onClick="location.href='login-Persian.html'">ورود/عضویت</button>
+		<button id="button2-title" onClick="location.href='home-page-English.html'">انگلیسی</button>	
+		</div>
+		
+		<!menu class>
+		<div id="menu">
+		<div id="menutime" class="blinkingtext"></div>	
+		<div id="menubar">	
+		<ul>
+		<li><a href="home-page-Persian.html">صفحه اصلی</a></li>
+		<li class="dropdown">
+			<a href="about us-Persian.html">معرفی محصولات</a> 
+			<div class="dropdown-content">
+				<a href="product-Cisco-Persian.html"><img src="photo/pro-cisco.png" alt="Cisco" class="img-top"></a>
+				<a href="#"><img src="photo/pro-Nexans.png" alt="Nexans" class="img-top"></a>
+				<a href="product-HPE-Persian.html"><img src="photo/pro-HPE.png" alt="HPE" class="img-top"></a>
+				<a href="#"><img src="photo/pro-Extreme.png" alt="Extreme" class="img-top"></a>
+		        <a href="product-Juniper-Persian.html"><img src="photo/pro-Juniper.png" alt="Juniper" class="img-top"></a>
+		        <a href="#"><img src="photo/pro_fortinet.png" alt="Fortinet" class="img-top"></a>
+			</div> 
+		</li>
+		<li class="dropdown">
+			<a href="about us-Persian.html">درباره ما</a> 
+	 	</li>
+		<li><a href="contact us-Persian.html" target="_self" >ارتباط با ما</a></li>
+		</ul>
+		</div>	
+		</div>
+		
+		<!header class>
+			<div id="header">
+        <div class="mySlides fade">
+         <img src="photo/title-1.jpg" alt="Cisco">
+        </div>
+        <div class="mySlides fade">
+  <img src="photo/title-2.jpg" alt="Nexans">
+</div>
+<div class="mySlides fade">
+   <img src="photo/title-3.jpg" alt="HP">
+ </div>
+<div class="mySlides fade">
+   <img src="photo/title-4.jpg" alt="Extreme">
+ </div>
+<div class="mySlides fade">
+   <img src="photo/title-5.jpg" alt="juniper">
+ </div>
+<div class="mySlides fade">
+   <img src="photo/title-6.jpg" alt="Fortinet">
+ </div>	
+<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+</div>
+		
+		<!top class>
+		<div id="top">
+			<br>
+			 <img src="photo/ARP-fa.png" alt="ARP">
+			<div id="top1">
+			  <div id="top1-1"><a href="warranty-Persian.html"><img src="photo/khadamat.png" alt="warranty" class="img-top"></a></div>
+	          <div id="top1-2"><a href="installation-Persian.html"><img src="photo/nasb.png" alt="installation" class="img-top"></a></div> 
+			  <div id="top1-3"><a href="Consulting-Persian.html"><img src="photo/moshavere.png" alt="Advice" class="img-top"></a></div> 
+			  <div id="top1-4"><a href="product-Persian.html"><img src="photo/mahsulat.png" alt="product" class="img-top"></a></div>
+			</div>
+			<br>
+			<img src="photo/product-fa.png" alt="آریا رایانه پارسیان" >
+		    <div id="top2">
+			  <div id="top2-1">
+				  <a href="product-Cisco-Persian.html"> <img src="photo/product-1.png" alt="Cisco" class="img-top"></a> 
+	          </div>  
+			  <div id="top2-2">
+				    <a href="#"><img src="photo/product-2.png" alt="Nexans" class="img-top" ></a> 
+	           </div> 
+			  <div id="top2-3">
+				   <a href="#"> <img src="photo/product-3.png" alt="HPE" class="img-top" > </a>
+	          </div> 
+			  <div id="top2-4">
+				    <a href="#"><img src="photo/product-4.png" alt="Extreme" class="img-top" > </a>
+	          </div> 
+			  <div id="top2-5">
+				    <a href="product-Juniper-Persian.html"><img src="photo/product-5.png" alt="Juniper" class="img-top" ></a> 
+	          </div> 
+			  <div id="top2-6">
+				   <a href="#"> <img src="photo/product-6.png" alt="Fortinet" class="img-top" ></a> 
+	          </div> 
+			</div>
+	  </div>
+		
+		<!bottom class>	
+		   <div id="bottom">
+			  <div id="bottom-left">
+				  <h3 dir="rtl">ورود به حساب کاربری:</h3><br>
+				<div id="bottom-left1">  
+			   <lable>نام کاربری</lable><br>
+	           <input type="text" size="20"  maxlength="10" placeholder="کدملی خود را وارد نمایید"><br>
+	           <lable>پسورد</lable><br>
+	           <input type="password" size="20"  maxlength="12" >
+			   <br>
+	           <input type="submit" value="ورود" id="button-bottom">
+			  </div>
+			  </div>  
+			  <div id="bottom-right">
+				  <h3 dir="rtl">تماس با ما:</h3><br>
+				<ul>
+				  <li id="li1">بندرانزلی - خیابان ساحل قو - گلستان 1 - کوچه فتح</li><br><br>
+				  <li id="li2">013-44437601</li><br><br>
+				  <li id="li3">info@aryarayaneh.ir</li>
+				</ul>  
+			  </div>
+			</div>  
+		
+		<!footer class>
+		<div id="footer">
+			<img src="photo/logo-footer.png" alt="آریا رایانه پارسیان">
+			<p>Copyright © ARP Co. All Rights Reserved.</p></div>
+		</div>
+		
+	
+</body>
+</html>

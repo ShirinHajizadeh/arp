@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>آریا رایانه پارسیان</title>
+<link href="photo/favicon.ico" rel="shortcut icon" type="image/x-icon" />	
+<link href="product-Juniper-Persian.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+var i=0;
+function picchangetitle(){
+	var arr=new Array("photo/title-2.jpg","photo/title-3.jpg","photo/title-4.jpg","photo/title-5.jpg","photo/title-6.jpg");
+    var pic=document.getElementsByName("img-title").item(0);
+	pic.src=arr[i];
+	i++;
+	if(i>arr.length-1){i=0;}
+}
+	 setInterval("picchangetitle()",1800);
+	
+	function picchangeleft2(){
+	var arr=new Array("photo/product-2.png","photo/product-3.png","photo/product-4.png","photo/product-5.png","photo/product-6.png");
+    var pic=document.getElementsByName("img-left2").item(0);
+	pic.src=arr[i];
+	i++;
+	if(i>arr.length-1){i=0;}
+}
+	 setInterval("picchangeleft2()",1800);
+	
+	function date() {
+	week= new Array("يكشنبه","دوشنبه","سه شنبه","چهارشنبه","پنج شنبه","جمعه","شنبه")
+    months = new Array("فروردين","ارديبهشت","خرداد","تير","مرداد","شهريور","مهر","آبان","آذر","دی","بهمن","اسفند");
+    a = new Date();
+    d= a.getDay();
+    day= a.getDate();
+    month = a.getMonth()+1;
+    year= a.getYear()-100;
+     time=a.toLocaleTimeString();
+	year = (year== 0)?2000:year;
+	(year<1000)? (year += 2000):true;
+    year -= ( (month < 3) || ((month == 3) && (day < 21)) )? 622:621;
+	switch (month) {
+    	case 1: (day<21)? (month=10, day+=10):(month=11, day-=20); break;
+    	case 2: (day<20)? (month=11, day+=11):(month=12, day-=19); break;
+    	case 3: (day<21)? (month=12, day+=9):(month=1, day-=20);   break;
+    	case 4: (day<21)? (month=1, day+=11):(month=2, day-=20);   break;
+    	case 5:
+    	case 6: (day<22)? (month-=3, day+=10):(month-=2, day-=21); break;
+    	case 7:
+    	case 8:
+    	case 9: (day<23)? (month-=3, day+=9):(month-=2, day-=22);  break;
+    	case 10:(day<23)? (month=7, day+=8):(month=8, day-=22);    break;
+    	case 11:
+    	case 12:(day<22)? (month-=3, day+=9):(month-=2, day-=21);  break;
+       default:  	break;
+	}
+ document.getElementById("menutime").innerHTML=week[d]+" "+day+" "+months[month-1]+" "+ year+" "+time;
+setInterval("date()",1000);	
+}
+</script>
+</head>
+
+<body onLoad="date()">
+	<!main class>
+	<div id="main">
+		
+	<!title class>	
+		<div id="title">
+		<div id="img-title"></div>	
+		<button id="button1-title" onClick="location.href='login-Persian.html'">ورود/عضویت</button>
+		<button id="button2-title" onClick="location.href='home-page-English.html'">انگلیسی</button>	
+		</div>
+		
+		<!menu class>
+		<div id="menu">
+		<div id="menutime" class="blinkingtext"></div>	
+		<div id="menubar">	
+		<ul>
+		<li><a href="home-page-Persian.html">صفحه اصلی</a></li>
+		<li class="dropdown">
+			<a href="about us-Persian.html">معرفی محصولات</a> 
+			<div class="dropdown-content">
+				<a href="product-Cisco-Persian.html"><img src="photo/pro-cisco.png" alt="Cisco" class="img-top"></a>
+				<a href="#"><img src="photo/pro-Nexans.png" alt="Nexans" class="img-top"></a>
+				<a href="product-HPE-Persian.html"><img src="photo/pro-HPE.png" alt="HPE" class="img-top"></a>
+				<a href="#"><img src="photo/pro-Extreme.png" alt="Extreme" class="img-top"></a>
+		        <a href="product-Juniper-Persian.html"><img src="photo/pro-Juniper.png" alt="Juniper" class="img-top"></a>
+		        <a href="#"><img src="photo/pro_fortinet.png" alt="Fortinet" class="img-top"></a>
+			</div> 
+		</li>
+		<li class="dropdown">
+			<a href="about us-Persian.html">درباره ما</a> 
+	 	</li>
+		<li><a href="contact us-Persian.html" target="_self" >ارتباط با ما</a></li>
+		</ul>
+		</div>	
+		</div>
+		
+		<!header class>
+		<div id="header">
+		  	<img src="photo/title-1.jpg" alt="Cisco" name="img-title" >
+		</div>
+		<!top class>
+		<div id="top">
+				<div id="top1">
+				<div class="img1"><div class="text">SRX Branch</div><img src="photo/Switche-Cisco-pro.jpg" alt="Juniper" title="SRX Branch"></div> 
+			   <div class="img2">
+				<div class="img2-1"><img src="photo/SmallBranch-Juniper_pro.jpg" alt="Juniper" title="Small Branch">
+				   <p>SRX 100 Series</p><br>
+					<p>SRX 100 Series</p>
+				 </div>
+				<div class="img2-2"><img src="photo/MediumBranch-juniper-pro.jpg" alt="Juniper" title="Medium Branch">
+				    <p>SRX 300 Series</p>
+				</div>
+				<div class="img2-3"><img src="photo/LargeBranch-Juniper-pro.jpg" alt="Juniper" title="LargeBranch">
+				    <p>SRX 500 Series</p><br>
+					<p>SRX 600 Series</p>
+				 </div>	
+			   </div>
+			</div>
+			<br>
+			<div id="top2">
+			   <div class="img1"><div class="text">SRX Data Center</div><img src="photo/SRX Datacenter-juniper.jpg" alt="Juniper" title="SRX Data Center"></div> 
+			  <div class="img2">
+				<div class="img2-1"><img src="photo/SRX1000-Juniper-pro.jpg" alt="juniper" title="SRX1000">
+				 <p>SRX 1400</p><br>
+				<p>SRX 1500</p>	
+				</div>
+				<div class="img2-2"><img src="photo/SRX3000-Juniper-pro.jpg" alt="juniper" title="SRX3000">
+				 <p>SRX 1500</p>
+				</div>
+				<div class="img2-3"><img src="photo/SRX5000-Juniper-pro.jpg" alt="juniper" title="SRX5000">
+				 <p>SRX 5400</p><br>
+				 <p>SRX 5600</p><br>
+				 <p>SRX 5800</p> 	
+				</div>
+			  </div>
+			
+		 </div>	
+	</div>
+		
+		<!footer class>
+		<div id="footer">
+			<img src="photo/logo-footer.png" alt="آریا رایانه پارسیان">
+			<p>Copyright © ARP Co. All Rights Reserved.</p></div>
+		
+	</div>
+</body>
+</html>
